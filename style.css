@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"); /* 400 */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"); /* 700 */
+
+:root {
+  --header-font: "Big Shoulders Display", cursive;
+  --header-color: hsl(0, 0%, 95%);
+  --paragraph-font: "Lexend Deca", sans-serif;
+  --paragraph-color: hsla(0, 0%, 100%, 0.75);
+}
+body {
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+/*containers */
+.main-container {
+  display: flex;
+}
+
+.orange-container {
+  border-radius: 8px 0 0 8px;
+  height: 500px;
+  width: 310px;
+  background-color: hsl(31, 77%, 52%);
+}
+.lightgreen-container {
+  height: 500px;
+  width: 310px;
+  background-color: hsl(184, 100%, 22%);
+}
+.darkgreen-container {
+  border-radius: 0 8px 8px 0;
+  height: 500px;
+  width: 310px;
+  background-color: hsl(179, 100%, 13%);
+}
+/* inside container */
+.orange-header,
+.lightgreen-header,
+.darkgreen-header {
+  font-family: var(--header-font);
+  color: var(--header-color);
+  padding-left: 50px;
+}
+
+.orange-paragraph,
+.lightgreen-paragraph,
+.darkgreen-paragraph {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
+  padding: 20px 50px 0 50px;
+  line-height: 1.8;
+}
+.sedan,
+.suvs,
+.luxury {
+  padding-top: 60px;
+  padding-left: 50px;
+}
+
+/* buttons */
+
+.orange-btn,
+.lightgreen-btn,
+.darkgreen-btn {
+  background-color: white;
+  border-style: solid;
+  border-color: white;
+  padding: 15px 32px;
+  border-radius: 30px;
+  font-family: var(--paragraph-font);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.orange-btn:hover,
+.lightgreen-btn:hover,
+.darkgreen-btn:hover {
+  color: white;
+  background-color: unset;
+}
+.orange-btn-container,
+.lightgreen-btn-container,
+.darkgreen-btn-container {
+  padding-left: 50px;
+  padding-top: 60px;
+}
+.orange-btn {
+  color: hsl(31, 77%, 52%);
+}
+.lightgreen-btn {
+  color: hsl(184, 100%, 22%);
+}
+.darkgreen-btn {
+  color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 960px){
+  main{
+    height: unset;
+  }
+  .main-container{
+    flex-direction: column;
+  }
+  .orange-container{
+    border-radius: 8px 8px 0 0;
+  }
+  .lightgreen-container{
+    border-radius: unset;
+  }
+  .darkgreen-container{
+    border-radius: 0 0 8px 8px;
+  }
+}
