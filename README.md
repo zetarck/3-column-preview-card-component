@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
--  [Solution]()
--  [Live Site]()
+-  [Solution](https://www.frontendmentor.io/solutions/html-and-css-flexbox-8BoQBLV5w)
+-  [Live Site](https://zetarck.github.io/3-column-preview-card-component/)
 
 ## My process
 
